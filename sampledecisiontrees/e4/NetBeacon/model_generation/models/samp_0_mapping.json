@@ -1,0 +1,10 @@
+{
+  "f1": {
+    "original_feature": "f2",
+    "operation": "min"
+  },
+  "f2": {
+    "original_feature": "f1",
+    "operation": "sum"
+  }
+}

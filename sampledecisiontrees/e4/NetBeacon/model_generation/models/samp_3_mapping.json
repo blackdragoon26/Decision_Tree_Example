@@ -1,0 +1,10 @@
+{
+  "f1": {
+    "original_feature": "f1",
+    "operation": "sum"
+  },
+  "f2": {
+    "original_feature": "f3",
+    "operation": "max"
+  }
+}
