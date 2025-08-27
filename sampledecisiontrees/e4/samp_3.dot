@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+
+65 [label="f5 <= 1682\ngini = 0.74\nsamples = 2500\nvalue = [800, 1500, 300, 550]\nclass = 1"] ;
+
+66 [label="f10 <= 100\ngini = 0.64\nsamples = 1900\nvalue = [800, 1100, 0, 0]\nclass = 1"] ;
+65 -> 66 ;
+
+67 [label="gini = 0.0\nsamples = 800\nvalue = [800, 0, 0, 0]\nclass = 0"] ;
+66 -> 67 ;
+
+74 [label="gini = 0.0\nsamples = 1100\nvalue = [0, 1100, 0, 0]\nclass = 1"] ;
+66 -> 74 ;
+
+81 [label="f13 <= 1234\ngini = 0.50\nsamples = 600\nvalue = [0, 400, 300, 550]\nclass = 3"] ;
+65 -> 81 ;
+
+82 [label="gini = 0.0\nsamples = 300\nvalue = [0, 0, 300, 0]\nclass = 2"] ;
+81 -> 82 ;
+
+89 [label="gini = 0.0\nsamples = 300\nvalue = [0, 0, 0, 550]\nclass = 3"] ;
+81 -> 89 ;
+}
