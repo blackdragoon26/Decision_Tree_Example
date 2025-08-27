@@ -1,0 +1,18 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+
+17 [label="f1 <= 400\ngini = 0.75\nsamples = 100\nvalue = [30, 55, 20, 10]\nclass = 1"] ;
+18 [label="f1 <= 0\ngini = 0.64\nsamples = 60\nvalue = [30, 45, 0, 0]\nclass = 1"] ;
+19 [label="gini = 0.0\nsamples = 30\nvalue = [30, 0, 0, 0]\nclass = 0"] ;
+20 [label="gini = 0.0\nsamples = 30\nvalue = [0, 45, 0, 0]\nclass = 1"] ;
+21 [label="f2 <= 700\ngini = 0.48\nsamples = 40\nvalue = [0, 10, 20, 10]\nclass = 2"] ;
+22 [label="gini = 0.0\nsamples = 20\nvalue = [0, 0, 20, 0]\nclass = 2"] ;
+23 [label="gini = 0.0\nsamples = 20\nvalue = [0, 0, 0, 10]\nclass = 3"] ;
+17 -> 18 ;
+18 -> 19 ;
+18 -> 20 ;
+17 -> 21 ;
+21 -> 22 ;
+21 -> 23 ;
+}
